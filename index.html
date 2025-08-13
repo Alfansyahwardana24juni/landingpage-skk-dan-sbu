@@ -22,37 +22,42 @@
 </head>
 
 <body class="bg-white text-gray-900">
-  <!-- Hero Section -->
-  <section class="flex flex-col lg:flex-row items-center bg-[#FFC700]">
-    <div class="lg:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 text-center lg:text-left order-2 lg:order-1">
+  <section class="relative flex flex-col lg:flex-row items-center bg-[#FFC700] min-h-0 lg:min-h-screen pb-20 lg:pb-0">
+    <!-- Tambah pb-10 -->
+    <div
+      class="lg:w-1/2 relative flex justify-center items-center w-full h-[50vh] xs:h-[55vh] sm:h-[60vh] lg:h-screen order-first lg:order-last">
+      <img alt="Two construction workers looking at a blueprint" class="absolute inset-0 w-full h-full object-cover"
+        src="img/hero.png" />
+      <div class="absolute top-3 right-3 xs:top-4 xs:right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 z-20">
+        <img alt="Logo of PT Akses Legal Indonesia" class="w-20 xs:w-24 sm:w-28 md:w-32 lg:w-40 xl:w-48"
+          src="img/Logo Ali Biru Panjang 3.png" />
+      </div>
+    </div>
+
+    <!-- Content Section - Below Image on Mobile, Left on Desktop -->
+    <div class="lg:w-1/2 p-4 sm:p-6 md:p-8 lg:p-16 xl:p-20 text-center lg:text-left z-10 py-8 lg:py-0">
       <h1
-        class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#142A5C] font-extrabold leading-tight mb-6 lg:mb-8">
-        Mengapa Sertifikat <br />
-        SKK & SBU Konstruksi <br />
+        class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-[#142A5C] font-extrabold leading-tight mb-4 sm:mb-6 md:mb-8">
+        Mengapa Sertifikat <br class="hidden xs:block" />
+        SKK & SBU Konstruksi <br class="hidden xs:block" />
         PENTING??
       </h1>
-      <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
+
+      <!-- Buttons -->
+      <div class="flex flex-col space-y-3 sm:space-y-0 sm:flex-row justify-center lg:justify-start gap-2 sm:gap-4">
         <a href="#skk-dan-sbu"
-          class="bg-[#14C92E] hover:bg-[#12b32a] text-white font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto transition duration-300 ease-in-out text-center">
+          class="bg-[#14C92E] hover:bg-[#12b32a] text-white font-semibold rounded-full px-6 py-3 sm:px-8 sm:py-4 text-sm xs:text-base sm:text-lg shadow-lg w-full sm:w-auto transition duration-300 ease-in-out text-center">
           Pelajari selengkapnya
         </a>
-        <a href="https://wa.me/6282151519925" target="_blank"
-          class="bg-white border-2 border-[#12b32a] text-[#12b32a] font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-gray-50">
-          <i class="fab fa-whatsapp text-lg sm:text-xl"></i>
+        <a href="https://wa.me/6282151519925?text=Halo%20saya%20Dari%20Landing%20Page%20SKK%20%26%20SBU" target="_blank"
+          class="bg-white border-2 border-[#12b32a] text-[#12b32a] font-semibold rounded-full px-6 py-3 sm:px-8 sm:py-4 text-sm xs:text-base sm:text-lg shadow-lg w-full sm:w-auto flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-gray-50">
+          <i class="fab fa-whatsapp text-base sm:text-xl"></i>
           Konsultasi Gratis
         </a>
       </div>
     </div>
-    <div
-      class="lg:w-1/2 relative flex justify-center items-center w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] order-1 lg:order-2">
-      <img alt="Two construction workers looking at a blueprint" class="w-full h-full object-cover"
-        src="img/hero.png" />
-      <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8">
-        <img alt="Logo of PT Akses Legal Indonesia" class="w-16 sm:w-20 md:w-24 lg:w-32 xl:w-40"
-          src="img/Logo Ali Biru Panjang 3.png" />
-      </div>
-    </div>
   </section>
+
 
   <!-- Explanation Section -->
   <section id="skk-dan-sbu" class="px-4 sm:px-6 md:px-12 lg:px-20 py-8 sm:py-12 bg-white text-center max-w-7xl mx-auto">
@@ -211,8 +216,8 @@
   </section>
 
   <!-- Pricing Header Section -->
-  <section class="relative bg-center bg-cover py-8 sm:py-12 md:py-16 lg:py-24 text-white text-center"
-    style="background-image: url('img/background-blur.jpg');">
+  <section class="relative bg-center bg-no-repeat py-16 sm:py-12 md:py-16 lg:py-24 text-white text-center bg-fixed"
+    style="background-image: url('img/background-blur.jpg'); background-size: cover;">
     <div class="absolute inset-0 bg-[#142A5C] opacity-70"></div>
     <div class="relative z-10 px-4 sm:px-6">
       <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 leading-tight">
