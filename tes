@@ -1,0 +1,323 @@
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Sertifikat SKK &amp; SBU Konstruksi
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Hero Section -->
+    <section class="flex flex-col lg:flex-row items-center bg-[#FFC700] min-h-screen lg:min-h-0">
+        <div class="lg:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 text-center lg:text-left order-2 lg:order-1">
+            <h1
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl text-[#142A5C] font-extrabold leading-tight mb-6 lg:mb-8">
+                Mengapa Sertifikat <br />
+                SKK & SBU Konstruksi <br />
+                PENTING??
+            </h1>
+            <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
+                <a href="#skk-dan-sbu"
+                    class="bg-[#14C92E] hover:bg-[#12b32a] text-white font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto transition duration-300 ease-in-out text-center">
+                    Pelajari selengkapnya
+                </a>
+                <a href="https://wa.me/6282151519925" target="_blank"
+                    class="bg-white border-2 border-[#12b32a] text-[#12b32a] font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg w-full sm:w-auto flex items-center justify-center gap-2 transition duration-300 ease-in-out hover:bg-gray-50">
+                    <i class="fab fa-whatsapp text-lg sm:text-xl"></i>
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+        <div class="lg:w-1/2 relative flex justify-center items-center w-full order-1 lg:order-2">
+            <img alt="Two construction workers looking at a blueprint"
+                class="w-full h-64 sm:h-80 lg:h-full object-cover"
+                src="https://via.placeholder.com/800x600/4A5568/FFFFFF?text=Hero+Image" />
+            <div class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8">
+                <img alt="Logo of PT Akses Legal Indonesia" class="w-16 sm:w-20 md:w-24 lg:w-32 xl:w-40"
+                    src="https://via.placeholder.com/200x80/2D3748/FFFFFF?text=ALI+Logo" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Explanation Section -->
+    <section id="skk-dan-sbu"
+        class="px-4 sm:px-6 md:px-12 lg:px-20 py-8 sm:py-12 bg-white text-center max-w-7xl mx-auto">
+        <h2 class="text-blue-700 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2">
+            Apa itu Sertifikat SKK
+            <span class="text-yellow-400">
+                &amp;
+            </span>
+            <span class="text-yellow-400 font-semibold">
+                SBU Konstruksi?
+            </span>
+        </h2>
+        <p class="text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg leading-relaxed px-2">
+            Sertifikat SKK &amp; SBU Konstruksi wajib dimiliki agar tenaga kerja dan perusahaan konstruksi diakui resmi,
+            profesional, dan kompetitif. Keduanya saling melengkapi: SKK untuk individu, SBU untuk badan usaha.
+        </p>
+        <h3 class="text-blue-700 font-bold text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8">
+            Manfaat Utama
+        </h3>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto text-center">
+            <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+                <img alt="Icon showing a person with a checklist and star representing expanding tender opportunities"
+                    class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                    src="https://via.placeholder.com/80x80/4A5568/FFFFFF?text=1" />
+                <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+                    Memperbesar peluang menang tender
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+                <img alt="Icon showing a person with a badge representing improving reputation and business credibility"
+                    class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                    src="https://via.placeholder.com/80x80/4A5568/FFFFFF?text=2" />
+                <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+                    Meningkatkan reputasi dan kredibilitas usaha
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+                <img alt="Icon showing handshake and group representing supporting market sustainability and trust"
+                    class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                    src="https://via.placeholder.com/80x80/4A5568/FFFFFF?text=3" />
+                <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+                    Mendukung keberlanjutan dan kepercayaan pasar
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+                <img alt="Icon showing scales of justice and document representing providing legal protection"
+                    class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-18 lg:h-18"
+                    src="https://via.placeholder.com/80x80/4A5568/FFFFFF?text=4" />
+                <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+                    Memberi perlindungan hukum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKK & SBU Details Section -->
+    <section class="bg-white py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto">
+            <!-- SKK Section -->
+            <div
+                class="flex flex-col md:flex-row-reverse items-center justify-between mb-12 sm:mb-16 md:mb-20 gap-6 md:gap-8">
+                <div class="w-full md:w-1/2 flex justify-center p-2 sm:p-4">
+                    <img src="https://via.placeholder.com/600x400/4A5568/FFFFFF?text=SKK+Certificate"
+                        alt="Dua pekerja konstruksi memegang sertifikat SKK"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-lg" />
+                </div>
+                <div class="w-full md:w-1/2 p-2 sm:p-4">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#142A5C] mb-3 sm:mb-4">Sertifikat SKK
+                    </h2>
+                    <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base lg:text-lg">
+                        SKK (Sertifikat Kompetensi Kerja) adalah bukti pengakuan kompetensi
+                        kerja tenaga kerja konstruksi yang memiliki kompetensi sesuai bidang
+                        pekerjaannya.
+                    </p>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-[#142A5C] mb-3 sm:mb-4">Fungsi Utama</h3>
+                    <ul class="space-y-2 sm:space-y-3 text-gray-600">
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Menjamin kualitas SDM
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Meningkatkan profesionalitas
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Syarat dalam setiap proyek konstruksi atau tender pemerintah
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SBU Section -->
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12 sm:mb-16 md:mb-20 gap-6 md:gap-8">
+                <div class="w-full md:w-1/2 flex justify-center p-2 sm:p-4">
+                    <img src="https://via.placeholder.com/600x400/4A5568/FFFFFF?text=SBU+Certificate"
+                        alt="Dua pekerja konstruksi memegang sertifikat SBU"
+                        class="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-lg shadow-lg" />
+                </div>
+                <div class="w-full md:w-1/2 p-2 sm:p-4">
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#142A5C] mb-3 sm:mb-4">SBU Konstruksi
+                    </h2>
+                    <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base lg:text-lg">
+                        SBU Konstruksi (Sertifikat Badan Usaha) adalah sertifikat yang
+                        diberikan kepada perusahaan jasa konstruksi sebagai bukti kompetensi
+                        dan kemampuan usaha.
+                    </p>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-[#142A5C] mb-3 sm:mb-4">Fungsi Utama</h3>
+                    <ul class="space-y-2 sm:space-y-3 text-gray-600">
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Bukti legalitas &amp; kompetensi perusahaan
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Syarat wajib mengikuti tender proyek pemerintah/swasta
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1"><i class="fas fa-check-square"></i></span>
+                            Meningkatkan kepercayaan klien
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Both Important Section -->
+    <section class="bg-white pt-2 pb-8 sm:pb-10 md:pb-16 px-4 sm:px-6 -mt-4 sm:-mt-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#142A5C] mb-4 sm:mb-6">
+                Mengapa keduanya <span class="text-[#FFC700]">Penting?</span>
+            </h2>
+            <div class="flex flex-col lg:flex-row justify-center gap-6 sm:gap-8">
+                <div class="lg:w-1/2 text-left p-2 sm:p-4">
+                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-[#142A5C] mb-3 sm:mb-4">Untuk Tenaga Ahli
+                    </h3>
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1 flex-shrink-0"><i
+                                    class="fas fa-check-square"></i></span>
+                            Tanpa SKK, tenaga ahli tidak diakui secara resmi, meskipun berpengalaman.
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1 flex-shrink-0"><i
+                                    class="fas fa-check-square"></i></span>
+                            Menjamin standar keamanan dan mutu kerja di lapangan.
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 text-left p-2 sm:p-4">
+                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-[#142A5C] mb-3 sm:mb-4">Untuk Perusahaan
+                        Konstruksi</h3>
+                    <ul class="space-y-2 sm:space-y-3">
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1 flex-shrink-0"><i
+                                    class="fas fa-check-square"></i></span>
+                            Tanpa SBU, perusahaan tidak dapat berpartisipasi dalam banyak proyek.
+                        </li>
+                        <li class="flex items-start text-sm sm:text-base lg:text-lg">
+                            <span class="text-[#14C92E] mr-2 sm:mr-3 mt-1 flex-shrink-0"><i
+                                    class="fas fa-check-square"></i></span>
+                            Meningkatkan kredibilitas dan daya saing di pasar konstruksi.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Header Section -->
+    <section class="relative bg-center bg-cover py-8 sm:py-12 md:py-16 lg:py-24 text-white text-center"
+        style="background-image: linear-gradient(135deg, #142A5C 0%, #1e3a72 100%);">
+        <div class="absolute inset-0 bg-[#142A5C] opacity-70"></div>
+        <div class="relative z-10 px-4 sm:px-6">
+            <h2
+                class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 leading-tight">
+                <span class="block mb-2">List harga</span>
+                <span class="block">SKK dan SBU Konstruksi:</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-white py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-[#142A5C] mb-8 sm:mb-12">Khusus Ujian:</h3>
+            <div
+                class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 lg:gap-20 xl:gap-32 mb-12 sm:mb-16">
+                <div class="flex flex-col items-center p-4">
+                    <img src="https://via.placeholder.com/150x150/4A5568/FFFFFF?text=SKK+SMA" alt="SKK Jenjang 4"
+                        class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-3 sm:mb-4 rounded-lg shadow-md" />
+                    <p class="font-bold text-gray-700 text-sm sm:text-base lg:text-lg text-center mb-2">
+                        SKK Jenjang 4 <br />(SMA)
+                    </p>
+                    <p class="text-red-600 font-extrabold text-xl sm:text-2xl lg:text-3xl">Rp2.500.000</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <img src="https://via.placeholder.com/150x150/4A5568/FFFFFF?text=SKK+S1" alt="SKK Jenjang 6"
+                        class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-3 sm:mb-4 rounded-lg shadow-md" />
+                    <p class="font-bold text-gray-700 text-sm sm:text-base lg:text-lg text-center mb-2">
+                        SKK Jenjang 6 <br />(S1-Teknik)
+                    </p>
+                    <p class="text-red-600 font-extrabold text-xl sm:text-2xl lg:text-3xl">Rp4.000.000</p>
+                </div>
+            </div>
+            <p class="text-xs sm:text-sm lg:text-base text-gray-500 mb-12 sm:mb-16 max-w-2xl mx-auto">
+                *artinya hanya dibantu untuk ujian sertifikasi saja, Tenaga Ahli disiapkan oleh Klien
+            </p>
+
+            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-[#142A5C] mb-8 sm:mb-12">Sewa Tenaga Ahli SKK:
+            </h3>
+            <div
+                class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 lg:gap-20 xl:gap-32 mb-4 sm:mb-6">
+                <div class="flex flex-col items-center p-4">
+                    <img src="https://via.placeholder.com/150x150/4A5568/FFFFFF?text=Sewa+SMA" alt="SKK Sewa SMA"
+                        class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-3 sm:mb-4 rounded-lg shadow-md" />
+                    <p class="font-bold text-gray-700 text-sm sm:text-base lg:text-lg text-center mb-2">
+                        SKK <br />SMA
+                    </p>
+                    <p class="text-red-600 font-extrabold text-xl sm:text-2xl lg:text-3xl">Rp7.500.000</p>
+                </div>
+                <div class="flex flex-col items-center p-4">
+                    <img src="https://via.placeholder.com/150x150/4A5568/FFFFFF?text=Sewa+S1" alt="SKK Sewa S1-Teknik"
+                        class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-3 sm:mb-4 rounded-lg shadow-md" />
+                    <p class="font-bold text-gray-700 text-sm sm:text-base lg:text-lg text-center mb-2">
+                        SKK <br />S1-Teknik
+                    </p>
+                    <p class="text-red-600 font-extrabold text-xl sm:text-2xl lg:text-3xl">Rp9.000.000</p>
+                </div>
+            </div>
+            <p class="text-xs sm:text-sm lg:text-base text-gray-500 max-w-2xl mx-auto">
+                *artinya sudah terima beres Sertifikat dan tenaga ahli disiapkan oleh ALI
+            </p>
+        </div>
+    </section>
+
+    <!-- SBU Registration Section -->
+    <section class="bg-gray-100 py-8 sm:py-12 md:py-16 lg:py-20 px-4 sm:px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-[#142A5C] mb-2">
+                Registrasi SBU + KTA
+            </h4>
+            <p class="text-gray-700 text-base sm:text-lg lg:text-xl mb-6 sm:mb-8">Asosiasi Konstruksi</p>
+
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-red-600 mb-2 leading-tight">
+                Rp2.999.000
+            </h2>
+            <span class="text-sm sm:text-base lg:text-lg text-gray-500 font-normal block">
+                / Sub Kelas KBLI Konstruksi
+            </span>
+            <div class="w-24 sm:w-32 h-1 bg-gray-300 mx-auto mt-4 mb-8 sm:mb-12"></div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-8">
+                <p class="text-gray-700 font-bold text-sm sm:text-base lg:text-lg mb-4 sm:mb-0">Terdaftar di:</p>
+                <div class="flex items-center gap-4 sm:gap-6 lg:gap-8">
+                    <img src="https://via.placeholder.com/100x60/4A5568/FFFFFF?text=OSS" alt="OSS Logo"
+                        class="h-8 sm:h-10 lg:h-12 w-auto" />
+                    <img src="https://via.placeholder.com/100x60/4A5568/FFFFFF?text=PUPR" alt="PUPR Logo"
+                        class="h-8 sm:h-10 lg:h-12 w-auto" />
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
