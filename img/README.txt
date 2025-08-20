@@ -1,0 +1,1 @@
+ALI Icon & Character Pack — SVG format. Colors follow ALI brand.

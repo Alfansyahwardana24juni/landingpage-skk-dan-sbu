@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7FAFF"/>
+      <stop offset="100%" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <style>
+      .skin { fill:#F6CDA3 }
+      .blue { fill:#0E5AA7 }
+      .accent { fill:#1E88E5 }
+      .line { fill:none; stroke:#0B1B2B; stroke-width:4; stroke-linecap:round }
+    </style>
+  </defs>
+  <rect width="512" height="512" rx="24" fill="url(#bg)"/>
+  
+  <g transform="translate(96,96)">
+    <circle cx="160" cy="96" r="44" class="skin"/>
+    <path d="M116,110 Q160,86 204,110" class="line"/>
+    <rect x="110" y="60" width="100" height="36" rx="10" fill="#F6C000"/>
+    <path d="M120,198 Q160,178 200,198 L216,266 L104,266 Z" class="blue"/>
+    <rect x="96" y="210" width="48" height="92" class="accent" rx="10"/>
+    <rect x="176" y="210" width="48" height="92" class="accent" rx="10"/>
+    <rect x="140" y="250" width="40" height="24" rx="6" fill="#fff"/>
+    <path d="M224,280 L300,240 L312,256 L248,304 Z" class="blue"/>
+    <rect x="300" y="230" width="28" height="40" rx="6" fill="#fff" stroke="#0E5AA7" stroke-width="4"/>
+    <path d="M156,150 L156,178 M164,150 L164,178" class="line"/>
+  </g>
+
+</svg>

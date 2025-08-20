@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line { fill:none; stroke:#0E5AA7; stroke-width:6; stroke-linecap:round; stroke-linejoin:round }
+      .accent { stroke:#1E88E5; }
+      .fill1 { fill:#0E5AA7; }
+      .fill2 { fill:#1E88E5; }
+      .fillY { fill:#F6C000; }
+      .soft { fill:#ffffff; stroke:#0E5AA7; stroke-width:4 }
+    </style>
+  </defs>
+  
+      <rect x="16" y="20" width="96" height="88" rx="10" class="soft"/>
+      <line class="line accent" x1="16" y1="56" x2="112" y2="56"/>
+      <line class="line accent" x1="56" y1="20" x2="56" y2="108"/>
+      <path d="M84,36 C92,36 98,42 98,50 C98,64 84,78 84,78 C84,78 70,64 70,50 C70,42 76,36 84,36 Z" class="fill2"/>
+      <circle cx="84" cy="50" r="6" fill="#fff"/>
+    
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7FAFF"/>
+      <stop offset="100%" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <style>
+      .skin { fill:#F6CDA3 }
+      .blue { fill:#0E5AA7 }
+      .accent { fill:#1E88E5 }
+      .line { fill:none; stroke:#0B1B2B; stroke-width:4; stroke-linecap:round }
+    </style>
+  </defs>
+  <rect width="512" height="512" rx="24" fill="url(#bg)"/>
+  
+  <g transform="translate(70,90)">
+    <circle cx="160" cy="86" r="42" class="skin"/>
+    <rect x="116" y="52" width="88" height="28" rx="10" fill="#F6C000"/>
+    <path d="M104,180 L216,180 L236,276 L84,276 Z" class="blue"/>
+    <rect x="60" y="190" width="64" height="88" rx="10" fill="#fff" stroke="#0E5AA7" stroke-width="4"/>
+    <path d="M72,210 L108,210 M72,228 L104,228 M72,246 L96,246" class="line"/>
+    <path d="M200,140 L248,170 L248,210" class="line"/>
+    <circle cx="144" cy="128" r="6" fill="#0B1B2B"/>
+    <circle cx="176" cy="128" r="6" fill="#0B1B2B"/>
+  </g>
+
+</svg>

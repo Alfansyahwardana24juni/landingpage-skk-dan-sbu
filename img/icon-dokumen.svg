@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line { fill:none; stroke:#0E5AA7; stroke-width:6; stroke-linecap:round; stroke-linejoin:round }
+      .accent { stroke:#1E88E5; }
+      .fill1 { fill:#0E5AA7; }
+      .fill2 { fill:#1E88E5; }
+      .fillY { fill:#F6C000; }
+      .soft { fill:#ffffff; stroke:#0E5AA7; stroke-width:4 }
+      .bg { fill:#FFFFFF; }
+    </style>
+  </defs>
+  
+  <path d="M40,22 H76 L92,38 V106 H40 Z" class="soft" fill="#fff"/>
+  <path d="M76,22 V38 H92" class="line accent"/>
+  <g class="line">
+    <line x1="48" y1="54" x2="78" y2="54"/>
+    <line x1="48" y1="68" x2="78" y2="68"/>
+    <line x1="48" y1="82" x2="70" y2="82"/>
+  </g>
+  <path d="M48,96 L56,104 L70,86" fill="none" stroke="#1E88E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line { fill:none; stroke:#0E5AA7; stroke-width:6; stroke-linecap:round; stroke-linejoin:round }
+      .accent { stroke:#1E88E5; }
+      .fill1 { fill:#0E5AA7; }
+      .fill2 { fill:#1E88E5; }
+      .fillY { fill:#F6C000; }
+      .soft { fill:#ffffff; stroke:#0E5AA7; stroke-width:4 }
+      .bg { fill:#FFFFFF; }
+    </style>
+  </defs>
+  
+  <circle cx="48" cy="52" r="18" class="soft"/>
+  <g stroke="#0E5AA7" stroke-width="5" fill="none">
+    <path d="M48,36 L48,30 M48,74 L48,80 M34,52 L28,52 M68,52 L74,52 M36,40 L32,36 M60,68 L64,72 M36,68 L32,72 M60,40 L64,36"/>
+  </g>
+  <path d="M82,70 C82,62 94,62 94,70 C94,78 82,78 82,70 Z" fill="#1E88E5"/>
+  <rect x="80" y="30" width="24" height="16" rx="4" class="soft"/>
+  <line class="line" x1="88" y1="46" x2="88" y2="54"/>
+  <line class="line" x1="96" y1="46" x2="96" y2="54"/>
+
+</svg>

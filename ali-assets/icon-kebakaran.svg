@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line { fill:none; stroke:#0E5AA7; stroke-width:6; stroke-linecap:round; stroke-linejoin:round }
+      .accent { stroke:#1E88E5; }
+      .fill1 { fill:#0E5AA7; }
+      .fill2 { fill:#1E88E5; }
+      .fillY { fill:#F6C000; }
+      .soft { fill:#fff; stroke:#0E5AA7; stroke-width:5 }
+    </style>
+    
+  </defs>
+  
+  <path d="M78,36 C84,44 86,56 78,64 C92,64 98,74 98,84 C98,96 88,106 76,106 C58,106 44,92 44,76 C44,60 56,48 70,46 C68,56 76,60 78,36 Z" class="fill2"/>
+  <path d="M28,78 A36,36 0 1,0 100,78" class="line"/>
+
+</svg>
