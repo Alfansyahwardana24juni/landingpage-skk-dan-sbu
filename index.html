@@ -51,15 +51,47 @@
     .bg-gradient-blue {
       background: linear-gradient(135deg, #f1f5f9 0%, #e0f2fe 100%);
     }
+
+    :root {
+      --tw-bg-opacity: 1;
+      --tw-text-opacity: 1;
+    }
+
+    .fade-enter-active {
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .tab-panel.hidden {
+      display: none;
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-900">
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/6282151519925" target="_blank"
-    class="floating-whatsapp bg-[#14C92E] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform duration-300">
-    <i class="fab fa-whatsapp text-2xl"></i>
-  </a>
+
+  <!-- Start Script Socialchat Web Chat -->
+  <script type="text/javascript">
+    var js = document.createElement("script");
+    js.async = true;
+
+    window.WEBCHAT_URL = 'https://app.socialchat.id/webchat/f1d99d96d567ef7e07a1e8a182f7ffe44c?iframe=true';
+    window.WEBCHAT_BASE_URL = 'https://app.socialchat.id';
+    js.src = 'https://app.socialchat.id/widget/loader.js';
+    document.getElementsByTagName("head")[0].appendChild(js);
+  </script>
+  <!-- End Script Socialchat Web Chat -->
 
   <!-- Hero Section -->
   <section id="hero" class="relative flex flex-col lg:flex-row items-center bg-[#FFC700] overflow-hidden">
@@ -68,7 +100,7 @@
     <div class="lg:w-1/2 p-6 sm:p-8 md:p-12 lg:p-16 xl:p-20 text-center lg:text-left order-2 lg:order-1">
       <h1
         class="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl text-[#142A5C] font-extrabold leading-tight mb-0 sm:mb-0">
-        URUS <b class="font-extrabold">PBG & SLF,<br> SKK & SBU</b> <br>
+        URUS <b class="font-extrabold">PBG & SLF,<br> SKK & SBU KONSTRUKSI</b> <br>
 
         <!-- Mobile: inline (1 baris), Desktop: block (2 baris) -->
         <span
@@ -214,37 +246,41 @@
     </div>
   </section>
 
-
   <!-- Explanation Section (existing SKK & SBU) -->
-  <section id="skk-dan-sbu" class="px-4 sm:px-6 md:px-12 lg:px-20 py-8 sm:py-12 bg-white text-center max-w-7xl mx-auto">
-    <h2 class="text-blue-700 font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">
-      Apa itu Sertifikat SKK <span class="text-yellow-400">&amp;</span>
-      <span class="text-yellow-400 font-semibold">SBU Konstruksi?</span>
-    </h2>
-    <p class="text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg leading-relaxed px-2">
-      Sertifikat SKK &amp; SBU Konstruksi wajib dimiliki agar tenaga kerja dan perusahaan konstruksi diakui resmi,
-      profesional, dan kompetitif. Keduanya saling melengkapi: SKK untuk individu, SBU untuk badan usaha CV &amp; PT.
-    </p>
-
-    <h3 class="text-blue-700 font-bold text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8">Manfaat SKK & SBU</h3>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto text-center">
-      <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
-        <img src="img/gambar 1.png" class="w-auto h-24" alt="Tender" />
-        <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">Memperbesar peluang menang tender</p>
-      </div>
-      <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
-        <img src="img/gambar 2.png" class="w-auto h-24" alt="Reputasi" />
-        <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">Meningkatkan reputasi &amp; kredibilitas
+  <section id="pbg-slf" class="bg-gradient-light py-16 px-4 sm:px-6 md:px-12 lg:px-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-blue-700 font-extrabold text-3xl sm:text-4xl md:text-5xl mb-4 leading-tight">
+          Apa itu Sertifikat SKK <span class="text-yellow-400">SBU Konstruksi</span>
+        </h2>
+        <p class="text-gray-700 max-w-4xl mx-auto mb-8 sm:mb-10 text-sm sm:text-base lg:text-lg leading-relaxed px-2">
+          Sertifikat SKK &amp; SBU Konstruksi wajib dimiliki agar tenaga kerja dan perusahaan konstruksi diakui resmi,
+          profesional, dan kompetitif. Keduanya saling melengkapi: SKK untuk individu, SBU untuk badan usaha CV &amp;
+          PT.
         </p>
       </div>
-      <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
-        <img src="img/gambar 3.png" class="w-auto h-24" alt="Keberlanjutan" />
-        <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">Mendukung keberlanjutan &amp; kepercayaan
-        </p>
-      </div>
-      <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
-        <img src="img/gambar 4.png" class="w-auto h-24" alt="Legal" />
-        <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">Memberi perlindungan hukum.</p>
+      <h3 class="text-blue-700 font-bold text-xl sm:text-2xl md:text-3xl mt-16 mb-8 text-center">
+        Manfaat SKK & SBU
+      </h3>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto text-center">
+        <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+          <img src="img/gambar 1.png" class="w-auto h-24" alt="Tender" />
+          <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight"></p>
+        </div>
+        <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+          <img src="img/gambar 2.png" class="w-auto h-24" alt="Reputasi" />
+          <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+          <img src="img/gambar 3.png" class="w-auto h-24" alt="Keberlanjutan" />
+          <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight">
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-2 sm:gap-3 p-2">
+          <img src="img/gambar 4.png" class="w-auto h-24" alt="Legal" />
+          <p class="text-xs sm:text-sm md:text-base text-gray-700 leading-tight"></p>
+        </div>
       </div>
     </div>
   </section>
@@ -371,7 +407,6 @@
     </div>
   </section>
 
-  <!-- Section Pelajari Ketentuan (singkat) -->
   <!-- SECTION: Ketentuan & Persyaratan (Embed-ready) -->
   <section id="syarat" class="w-full py-12">
     <div class="mx-auto max-w-6xl px-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
@@ -419,10 +454,10 @@
                 <p class="mt-1 text-sm text-slate-600">Dokumen dasar untuk pengajuan PBG. Format digital (PDF/JPG)
                   diperbolehkan.</p>
               </div>
-
             </div>
 
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <!-- Checklist items here... -->
               <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
                 <span
                   class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
@@ -490,11 +525,13 @@
               </div>
             </div>
 
+            <!-- Konsultasi PBG -->
             <div
               class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
               <p>Belum lengkap? <span class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu
                   siapkan gambar, pernyataan, dan cek kelayakan gratis.</span></p>
-              <a href="#konsultasi"
+              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22PBG%22%20saya%20dari%20website"
+                data-product="pbg" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
                 dengan Konsultan</a>
             </div>
@@ -512,17 +549,88 @@
             </div>
 
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <ChecklistItem title="Dokumen PBG/IMB" desc="Sebagai rujukan izin awal."></ChecklistItem>
-              <ChecklistItem title="Laporan Pengawasan Konstruksi" desc="Dari pengawas/penyedia jasa."></ChecklistItem>
-              <ChecklistItem title="Dokumen Kelayakan Teknis" desc="Arsitektur, struktur, utilitas."></ChecklistItem>
-              <ChecklistItem title="Berita Acara Uji Fungsi (jika ada)"
-                desc="Hasil uji sistem (listrik, hydrant, lift, dll)."></ChecklistItem>
-              <ChecklistItem title="Foto-foto Bangunan" desc="Eksterior & interior terkini."></ChecklistItem>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Dokumen PBG/IMB</p>
+                  <p class="text-sm text-slate-600">Sebagai rujukan izin awal.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Laporan Pengawasan Konstruksi</p>
+                  <p class="text-sm text-slate-600">Dari pengawas/penyedia jasa.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Dokumen Kelayakan Teknis</p>
+                  <p class="text-sm text-slate-600">Arsitektur, struktur, utilitas.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Berita Acara Uji Fungsi (jika ada)</p>
+                  <p class="text-sm text-slate-600">Hasil uji sistem (listrik, hydrant, lift, dll).</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Foto-foto Bangunan</p>
+                  <p class="text-sm text-slate-600">Eksterior & interior terkini.</p>
+                </div>
+              </div>
             </div>
 
-            <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
-              Catatan: <span class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami dapat membantu
-                inspeksi & penyusunan dokumen uji fungsi</span> bila belum tersedia.
+            <!-- Konsultasi SLF -->
+            <div
+              class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+              <p>Masih bingung dengan persyaratan SLF? <span
+                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
+                  pernyataan, dan cek kelayakan gratis.</span></p>
+              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SLF%22%20saya%20dari%20website"
+                data-product="slf" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
+                dengan Konsultan</a>
             </div>
           </div>
         </div>
@@ -537,18 +645,92 @@
                 <p class="mt-1 text-sm text-slate-600">Untuk tenaga ahli konstruksi S1 TEKNIK / NON TEKNIK</p>
               </div>
             </div>
-
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <ChecklistItem title="KTP" desc="."></ChecklistItem>
-              <ChecklistItem title="NPWP" desc=""></ChecklistItem>
-              <ChecklistItem title="Ijazah Pendidikan " desc="(S1 TEKNIK / NON TEKNIK )">
-              </ChecklistItem>
-              <ChecklistItem title="Foto Tampak Depan Berlatar Merah" desc="">
-              </ChecklistItem>
-              <ChecklistItem title="Tanda Tangan diAtas  Kertas Putih" desc=""></ChecklistItem>
-              <ChecklistItem title="Nomor Whatsapp Aktif" desc=""></ChecklistItem>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">KTP</p>
+                  <p class="text-sm text-slate-600">.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">NPWP</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Ijazah Pendidikan</p>
+                  <p class="text-sm text-slate-600">(S1 TEKNIK / NON TEKNIK )</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Foto Tampak Depan Berlatar Merah</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Tanda Tangan diAtas Kertas Putih</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Nomor Whatsapp Aktif</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
             </div>
-
             <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
               Proses asesmen dapat dilakukan <span
                 class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">secara daring</span>. Tim kami siap
@@ -561,24 +743,95 @@
                 <p class="mt-1 text-sm text-slate-600">Untuk tenaga ahli konstruksi (SMA-SMK min lulus 10 tahun)</p>
               </div>
             </div>
-
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <ChecklistItem title="KTP" desc="."></ChecklistItem>
-              <ChecklistItem title="NPWP" desc=""></ChecklistItem>
-              <ChecklistItem title="Ijazah Pendidikan " desc=" (SMA-SMK min lulus 10 tahun)">
-              </ChecklistItem>
-              <ChecklistItem title="Foto Tampak Depan Berlatar Merah" desc="">
-              </ChecklistItem>
-              <ChecklistItem title="Tanda Tangan diAtas  Kertas Putih" desc=""></ChecklistItem>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">KTP</p>
+                  <p class="text-sm text-slate-600">.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">NPWP</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Ijazah Pendidikan</p>
+                  <p class="text-sm text-slate-600">(SMA-SMK min lulus 10 tahun)</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Foto Tampak Depan Berlatar Merah</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">Tanda Tangan diAtas Kertas Putih</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
             </div>
-
             <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
               Proses asesmen dapat dilakukan <span
                 class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">secara daring</span>. Tim kami siap
               memandu bukti portofolio.
             </div>
+            <!-- Konsultasi SKK -->
+            <div
+              class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+              <p>Tidak tahu harus mulai dari mana untuk mengurus SKK? <span
+                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
+                  pernyataan, dan cek kelayakan gratis.</span></p>
+              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SKK%22%20saya%20dari%20website"
+                data-product="skk" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
+                dengan Konsultan</a>
+            </div>
           </div>
-
         </div>
 
         <!-- SBU -->
@@ -590,729 +843,812 @@
                 <p class="mt-1 text-sm text-slate-600">Legalitas badan usaha untuk bidang konstruksi.</p>
               </div>
             </div>
-
             <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              <ChecklistItem title="SKK 2 Tenaga Ahli" desc=""></ChecklistItem>
-              <ChecklistItem title="AKTA,PENDIRIAN" desc=""></ChecklistItem>
-              <ChecklistItem title="SK MENTERI" desc=""></ChecklistItem>
-              <ChecklistItem title="NIB" desc=""></ChecklistItem>
-              <ChecklistItem title="NPWP" desc=""></ChecklistItem>
-              <ChecklistItem title=" AKUN OSS" desc="">
-              </ChecklistItem>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">SKK 2 Tenaga Ahli</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">AKTA,PENDIRIAN</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">SK MENTERI</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">NIB</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">NPWP</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
+                <span
+                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
+                  </svg></span>
+                <div>
+                  <p class="font-semibold">AKUN OSS</p>
+                  <p class="text-sm text-slate-600"></p>
+                </div>
+              </div>
             </div>
             <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
               Perlu bantuan penentuan <span class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">KBLI &
                 klasifikasi</span>? Kami bantu mapping sesuai rencana proyek.
             </div>
+            <!-- Konsultasi SBU -->
+            <div
+              class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
+              <p>Kebingungan saat memilih KBLI untuk SBU? <span
+                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
+                  pernyataan, dan cek kelayakan gratis.</span></p>
+              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SBU%22%20saya%20dari%20website"
+                data-product="sbu" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
+                dengan Konsultan</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- hidden template to render checklist items -->
-    <template id="tpl-check">
-      <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-        <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-            class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-            <path fill-rule="evenodd"
-              d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-        <div>
-          <p class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Judul</p>
-          <p class="text-sm text-slate-600">Deskripsi</p>
-        </div>
-      </div>
-    </template>
-
-    <!-- Pricing header & tables (unchanged) -->
-    <section class="relative bg-center bg-no-repeat py-16 sm:py-12 md:py-16 lg:py-24 text-white text-center bg-fixed"
-      style="background-image:url('img/background-blur.jpg'); background-size:cover;">
-      <div class="absolute inset-0 bg-[#142A5C] opacity-70"></div>
-      <div class="relative z-10 px-4 sm:px-6">
-        <h2
-          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 leading-tight">
-          <span class="block mb-2">Daftar Harga Layanan Perizinan Konstruksi </span>
-          <span class="block">(PBG & SLF, SKK & SBU)</span>
-        </h2>
-      </div>
-    </section>
-    <section class="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-      <div class="max-w-7xl mx-auto">
-        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Layanan
-          PBG
-          & SLF</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 sm:mb-14">
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/PBG.png" alt="pbg"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">PBG</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp15.000.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp9.999.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Izin dasar untuk memulai pembangunan atau renovasi bangunan.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22PBG%22%20dengan%20harga%20%22Rp9.999.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/SLF.jpg" alt="slf"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SLF</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp15.000.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp9.999.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Dokumen penting yang menjamin bangunan telah memenuhi standar sebelum digunakan.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SLF%22%20dengan%20harga%20%22Rp9.999.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-        <p class="text-sm text-gray-500 text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          *Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate consectetur quia. Tempora,
-          dignissimos
-          consequatur ea id maiores odit voluptatibus sequi necessitatibus nisi. Sunt saepe, modi distinctio velit
-          excepturi maiores!
-        </p>
-
-        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Khusus
-          Ujian
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 sm:mb-14">
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/skksma.png" alt="SKK Jenjang 4"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SKK Jenjang 4 (SMA)</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp4.000.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp2.500.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Bantuan untuk ujian sertifikasi SKK, tenaga ahli disiapkan oleh Klien.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SKK%20Jenjang%204%20%28SMA%29%22%20dengan%20harga%20%22Rp2.500.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/ujianskk.png" alt="SKK Jenjang 6"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SKK Jenjang 6 (S1-Teknik)</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp5.500.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp4.000.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Bantuan untuk ujian sertifikasi SKK, tenaga ahli disiapkan oleh Klien.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SKK%20Jenjang%206%20%28S1-Teknik%29%22%20dengan%20harga%20%22Rp4.000.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-        <p class="text-sm text-gray-500 text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          *artinya hanya dibantu untuk ujian sertifikasi saja, Tenaga Ahli disiapkan oleh Klien
-        </p>
-
-        <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Sewa
-          Tenaga
-          Ahli SKK</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12 sm:mb-16">
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/skk.png" alt="SKK Sewa SMA"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SMA</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp9.000.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp7.500.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Layanan terima beres Sertifikat dengan tenaga ahli disiapkan oleh ALI.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22Sewa%20Tenaga%20Ahli%20SKK%20SMA%22%20dengan%20harga%20%22Rp7.500.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-          <div
-            class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-            <img src="img/s1.png" alt="SKK Sewa S1-Teknik"
-              class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-            <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">S1-Teknik</h4>
-            <div class="flex items-center space-x-2 mb-4">
-              <p class="text-gray-400 line-through text-base sm:text-lg">Rp10.500.000</p>
-              <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp9.000.000</p>
-            </div>
-            <p class="text-sm text-gray-500 mb-6">
-              Layanan terima beres Sertifikat dengan tenaga ahli disiapkan oleh ALI.
-            </p>
-            <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22Sewa%20Tenaga%20Ahli%20SKK%20S1-Teknik%22%20dengan%20harga%20%22Rp9.000.000%22.%20Saya%20dari%20website.%20Terimakasih."
-              class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-        <p class="text-sm text-gray-500 text-center max-w-2xl mx-auto">*artinya sudah terima beres Sertifikat dan tenaga
-          ahli disiapkan oleh ALI</p>
+  <!-- Pricing header & tables (unchanged) -->
+  <section class="relative bg-center bg-no-repeat py-16 sm:py-12 md:py-16 lg:py-24 text-white text-center bg-fixed"
+    style="background-image:url('img/background-blur.jpg'); background-size:cover;">
+    <div class="absolute inset-0 bg-[#142A5C] opacity-70"></div>
+    <div class="relative z-10 px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-2 leading-tight">
+        <span class="block mb-2">Daftar Harga Layanan Perizinan Konstruksi </span>
+        <span class="block">(PBG & SLF, SKK & SBU)</span>
+      </h2>
+    </div>
+  </section>
+  <section class="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto">
+      <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Layanan
+        PBG
+        & SLF</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 sm:mb-14">
         <div
           class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
-          <img src="img/SBU+KTA.jpg" alt="SKK Jenjang 6"
+          <img src="img/PBG.png" alt="pbg"
             class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
-          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">Registrasi SBU + KTA</h4>
-          <p class="text-[#E5A600] text-base sm:text-lg font-bold mb-6">
-            Asosiasi Konstruksi
-          </p>
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">PBG</h4>
           <div class="flex items-center space-x-2 mb-4">
-            <p class="text-gray-400 line-through text-base sm:text-lg">Rp4.500.000</p>
-            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp2.999.000</p>
-            <span class="text-gray-600 text-sm sm:text-base font-medium">/ Sub Kelas KBLI Konstruksi</span>
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp25.000.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp19.999.000</p>
           </div>
+          <p class="text-sm text-gray-500 mb-6">
+            Izin dasar untuk memulai pembangunan atau renovasi bangunan.
+          </p>
+          <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22PBG%22%20dengan%20harga%20%22Rp9.999.000%22.%20Saya%20dari%20website.%20Terimakasih."
+            class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+            Pesan Sekarang
+          </a>
+        </div>
+        <div
+          class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+          <img src="img/SLF.jpg" alt="slf"
+            class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SLF</h4>
+          <div class="flex items-center space-x-2 mb-4">
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp25.000.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp19.999.000</p>
+          </div>
+
+          <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SLF%22%20dengan%20harga%20%22Rp9.999.000%22.%20Saya%20dari%20website.%20Terimakasih."
+            class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Khusus
+        Ujian
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 sm:mb-14">
+        <div
+          class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+          <img src="img/skksma.png" alt="SKK Jenjang 4"
+            class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SKK Jenjang 4 (SMA)</h4>
+          <div class="flex items-center space-x-2 mb-4">
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp4.000.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp2.500.000</p>
+          </div>
+          <p class="text-sm text-gray-500 mb-6">
+            Bantuan untuk ujian sertifikasi SKK, tenaga ahli disiapkan oleh Klien.
+          </p>
+          <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SKK%20Jenjang%204%20%28SMA%29%22%20dengan%20harga%20%22Rp2.500.000%22.%20Saya%20dari%20website.%20Terimakasih."
+            class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+            Pesan Sekarang
+          </a>
+        </div>
+        <div
+          class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+          <img src="img/ujianskk.png" alt="SKK Jenjang 6"
+            class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SKK Jenjang 6 (S1-Teknik)</h4>
+          <div class="flex items-center space-x-2 mb-4">
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp5.500.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp4.000.000</p>
+          </div>
+          <p class="text-sm text-gray-500 mb-6">
+            Bantuan untuk ujian sertifikasi SKK, tenaga ahli disiapkan oleh Klien.
+          </p>
           <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SKK%20Jenjang%206%20%28S1-Teknik%29%22%20dengan%20harga%20%22Rp4.000.000%22.%20Saya%20dari%20website.%20Terimakasih."
             class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
             Pesan Sekarang
           </a>
         </div>
       </div>
+
+
+      <h3 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] text-center mb-10 sm:mb-14">Sewa
+        Tenaga
+        Ahli SKK</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-12 sm:mb-16">
+        <div
+          class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+          <img src="img/skk.png" alt="SKK Sewa SMA"
+            class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">SMA</h4>
+          <div class="flex items-center space-x-2 mb-4">
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp9.000.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp7.500.000</p>
+          </div>
+          <p class="text-sm text-gray-500 mb-6">
+            Layanan terima beres Sertifikat dengan tenaga ahli disiapkan oleh ALI.
+          </p>
+          <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22Sewa%20Tenaga%20Ahli%20SKK%20SMA%22%20dengan%20harga%20%22Rp7.500.000%22.%20Saya%20dari%20website.%20Terimakasih."
+            class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+            Pesan Sekarang
+          </a>
+        </div>
+        <div
+          class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+          <img src="img/s1.png" alt="SKK Sewa S1-Teknik"
+            class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+          <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">S1-Teknik</h4>
+          <div class="flex items-center space-x-2 mb-4">
+            <p class="text-gray-400 line-through text-base sm:text-lg">Rp10.500.000</p>
+            <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp9.000.000</p>
+          </div>
+          <p class="text-sm text-gray-500 mb-6">
+            Layanan terima beres Sertifikat dengan tenaga ahli disiapkan oleh ALI.
+          </p>
+          <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22Sewa%20Tenaga%20Ahli%20SKK%20S1-Teknik%22%20dengan%20harga%20%22Rp9.000.000%22.%20Saya%20dari%20website.%20Terimakasih."
+            class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="bg-gray-50 p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]">
+        <img src="img/SBU+KTA.jpg" alt="SKK Jenjang 6"
+          class="w-28 h-28 sm:w-32 sm:h-32 mb-4 rounded-full border-4 border-[#142A5C] p-1" />
+        <h4 class="font-bold text-xl sm:text-2xl text-gray-800 mb-2">Registrasi SBU + KTA</h4>
+        <p class="text-[#E5A600] text-base sm:text-lg font-bold mb-6">
+          Asosiasi Konstruksi
+        </p>
+        <div class="flex items-center space-x-2 mb-4">
+          <p class="text-gray-400 line-through text-base sm:text-lg">Rp4.500.000</p>
+          <p class="text-red-600 font-extrabold text-2xl sm:text-3xl">Rp2.999.000</p>
+          <span class="text-gray-600 text-sm sm:text-base font-medium">/ Sub Kelas KBLI Konstruksi</span>
+        </div>
+        <a href="https://wa.me/6282151519925?text=Halo%20Akses%20Legal%2C%20saya%20tertarik%20dengan%20layanan%20%22SKK%20Jenjang%206%20%28S1-Teknik%29%22%20dengan%20harga%20%22Rp4.000.000%22.%20Saya%20dari%20website.%20Terimakasih."
+          class="bg-[#142A5C] text-white font-semibold py-3 px-8 rounded-full shadow-md hover:bg-red-600 transition-colors duration-300">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-12 sm:py-16 md:py-20 px-4 sm:px-6 rounded-3xl">
+
+
+    <!-- Perbaikan untuk Tampilan FAQ -->
+    <section class="bg-gray-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full">
+      <div class="max-w-4xl mx-auto">
+        <!-- Header: Sedikit lebih menarik dengan ikon -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#142A5C] mb-4">
+            <i class="fas fa-question-circle text-[#FF8C00] mr-2"></i>
+            Pertanyaan Yang Sering Diajukan
+          </h2>
+          <p class="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
+            Temukan jawaban untuk pertanyaan umum seputar PBG, SLF, SKK, dan SBU Konstruksi
+          </p>
+        </div>
+
+        <!-- FAQ Items dengan desain yang lebih halus dan interaktif -->
+        <div class="space-y-4">
+
+          <!-- Menggunakan ID unik untuk setiap item FAQ -->
+          <!-- FAQ 1 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(1)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Apa perbedaan antara PBG dan IMB?
+              </h3>
+              <svg id="icon-1" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-1" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  PBG (Persetujuan Bangunan Gedung) adalah pengganti dari IMB (Izin Mendirikan Bangunan). PBG
+                  dikeluarkan melalui sistem OSS (Online Single Submission) dan SIMBG, sedangkan IMB adalah sistem
+                  lama.
+                  Fungsinya sama yaitu memberikan izin untuk membangun atau merenovasi bangunan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(2)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Berapa lama proses pengurusan SLF?
+              </h3>
+              <svg id="icon-2" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-2" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  Proses pengurusan SLF biasanya memakan waktu 14-30 hari kerja, tergantung kelengkapan dokumen dan
+                  kompleksitas bangunan. Dengan bantuan konsultan berpengalaman seperti ALI, proses dapat lebih cepat
+                  dan efisien.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(3)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Apakah semua bangunan wajib memiliki PBG dan SLF?
+              </h3>
+              <svg id="icon-3" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-3" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  Ya, berdasarkan UU No. 28 Tahun 2002 dan Permen PUPR, semua bangunan gedung wajib memiliki PBG
+                  sebelum
+                  pembangunan dan SLF setelah pembangunan selesai. Ini berlaku untuk bangunan komersial, industri,
+                  maupun hunian dengan kriteria tertentu.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(4)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Apa sanksi jika tidak memiliki PBG atau SLF?
+              </h3>
+              <svg id="icon-4" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-4" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  Sanksi dapat berupa teguran tertulis, pembekuan kegiatan pembangunan, penyegelan bangunan, pembekuan
+                  sertifikat laik fungsi, atau bahkan pembongkaran bangunan. Selain itu, ada sanksi administrasi
+                  berupa
+                  denda dan kesulitan dalam mengurus utilitas seperti listrik dan air.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(5)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Bagaimana cara mendapatkan Sertifikat SKK?
+              </h3>
+              <svg id="icon-5" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-5" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  Untuk mendapatkan SKK, Anda perlu mengikuti ujian sertifikasi kompetensi di LSP (Lembaga Sertifikasi
+                  Profesi) terakreditasi. Persyaratan meliputi pendidikan minimal, pengalaman kerja, dan dokumen
+                  pendukung. ALI dapat membantu persiapan ujian dan menyediakan tenaga ahli bersertifikat.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(6)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Apa perbedaan SKK Jenjang 4 dan Jenjang 6?
+              </h3>
+              <svg id="icon-6" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-6" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  SKK Jenjang 4 untuk lulusan SMA/SMK dengan pengalaman minimal 3 tahun, cocok untuk tenaga terampil.
+                  SKK Jenjang 6 untuk lulusan S1 Teknik dengan pengalaman minimal 2 tahun, cocok untuk tenaga ahli.
+                  Jenjang 6 memiliki kewenangan dan tanggung jawab yang lebih besar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(7)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Berapa masa berlaku SBU dan bagaimana cara perpanjangannya?
+              </h3>
+              <svg id="icon-7" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-7" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  SBU berlaku selama 3 tahun dan dapat diperpanjang. Untuk perpanjangan, perusahaan harus memenuhi
+                  persyaratan seperti laporan realisasi pekerjaan, SDM bersertifikat yang masih berlaku, dan membayar
+                  iuran asosiasi. Proses perpanjangan lebih mudah dibanding pengurusan baru.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
+              onclick="toggleFAQ(8)">
+              <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
+                Mengapa harus menggunakan jasa konsultan untuk pengurusan dokumen konstruksi?
+              </h3>
+              <svg id="icon-8" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div id="answer-8" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+              <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
+                  Konsultan berpengalaman memahami persyaratan teknis, proses birokrasi, dan update regulasi terbaru.
+                  Ini menghemat waktu, mengurangi risiko penolakan, dan memastikan dokumen sesuai standar. ALI telah
+                  menangani ribuan kasus dengan tingkat keberhasilan tinggi dan dukungan penuh hingga sertifikat
+                  terbit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <section class="bg-gray-100 py-12 sm:py-16 md:py-20 px-4 sm:px-6 rounded-3xl">
 
+    <section class="bg-white w-full py-16 sm:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] mb-6">
+          Dipercaya Lebih dari
+          <span class="block text-yellow-500 mt-2 text-4xl sm:text-5xl lg:text-6xl font-black leading-none">
+            10.000 Klien
+          </span>
+        </h2>
+        <p class="text-gray-600 text-base sm:text-lg mb-12 max-w-2xl mx-auto">
+          Baca apa kata mereka yang telah sukses mengurus perizinan konstruksi bersama kami.
+        </p>
 
-      <!-- Perbaikan untuk Tampilan FAQ -->
-      <section class="bg-gray-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full">
-        <div class="max-w-4xl mx-auto">
-          <!-- Header: Sedikit lebih menarik dengan ikon -->
-          <div class="text-center mb-12">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#142A5C] mb-4">
-              <i class="fas fa-question-circle text-[#FF8C00] mr-2"></i>
-              Pertanyaan Yang Sering Diajukan
-            </h2>
-            <p class="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
-              Temukan jawaban untuk pertanyaan umum seputar PBG, SLF, SKK, dan SBU Konstruksi
-            </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="relative w-full h-64 overflow-hidden">
+              <img src="img/testimoni1.jpg" alt="Irfan Ghafur, Klien Akses Legal"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-bold text-[#142A5C]">Irfan Ghafur</h3>
+                <div class="flex text-yellow-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 italic leading-relaxed">"Proses cepat dan pelayanan sangat memuaskan!"
+              </p>
+            </div>
           </div>
 
-          <!-- FAQ Items dengan desain yang lebih halus dan interaktif -->
-          <div class="space-y-4">
-
-            <!-- Menggunakan ID unik untuk setiap item FAQ -->
-            <!-- FAQ 1 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(1)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Apa perbedaan antara PBG dan IMB?
-                </h3>
-                <svg id="icon-1" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-1" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    PBG (Persetujuan Bangunan Gedung) adalah pengganti dari IMB (Izin Mendirikan Bangunan). PBG
-                    dikeluarkan melalui sistem OSS (Online Single Submission) dan SIMBG, sedangkan IMB adalah sistem
-                    lama.
-                    Fungsinya sama yaitu memberikan izin untuk membangun atau merenovasi bangunan.
-                  </p>
-                </div>
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="relative w-full h-64 overflow-hidden">
+              <img src="img/testimoni5.jpg" alt="IwanCoy, Klien Akses Legal"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
               </div>
             </div>
-
-            <!-- FAQ 2 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(2)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Berapa lama proses pengurusan SLF?
-                </h3>
-                <svg id="icon-2" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-2" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Proses pengurusan SLF biasanya memakan waktu 14-30 hari kerja, tergantung kelengkapan dokumen dan
-                    kompleksitas bangunan. Dengan bantuan konsultan berpengalaman seperti ALI, proses dapat lebih cepat
-                    dan efisien.
-                  </p>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-bold text-[#142A5C]">IwanCoy</h3>
+                <div class="flex text-yellow-500">
                 </div>
               </div>
+              <p class="text-sm text-gray-600 italic leading-relaxed">"Pelayanan Cepat, profesional, Mantap dan
+                Fastrespon"</p>
             </div>
-
-            <!-- FAQ 3 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(3)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Apakah semua bangunan wajib memiliki PBG dan SLF?
-                </h3>
-                <svg id="icon-3" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-3" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Ya, berdasarkan UU No. 28 Tahun 2002 dan Permen PUPR, semua bangunan gedung wajib memiliki PBG
-                    sebelum
-                    pembangunan dan SLF setelah pembangunan selesai. Ini berlaku untuk bangunan komersial, industri,
-                    maupun hunian dengan kriteria tertentu.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(4)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Apa sanksi jika tidak memiliki PBG atau SLF?
-                </h3>
-                <svg id="icon-4" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-4" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Sanksi dapat berupa teguran tertulis, pembekuan kegiatan pembangunan, penyegelan bangunan, pembekuan
-                    sertifikat laik fungsi, atau bahkan pembongkaran bangunan. Selain itu, ada sanksi administrasi
-                    berupa
-                    denda dan kesulitan dalam mengurus utilitas seperti listrik dan air.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 5 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(5)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Bagaimana cara mendapatkan Sertifikat SKK?
-                </h3>
-                <svg id="icon-5" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-5" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Untuk mendapatkan SKK, Anda perlu mengikuti ujian sertifikasi kompetensi di LSP (Lembaga Sertifikasi
-                    Profesi) terakreditasi. Persyaratan meliputi pendidikan minimal, pengalaman kerja, dan dokumen
-                    pendukung. ALI dapat membantu persiapan ujian dan menyediakan tenaga ahli bersertifikat.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 6 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(6)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Apa perbedaan SKK Jenjang 4 dan Jenjang 6?
-                </h3>
-                <svg id="icon-6" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-6" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    SKK Jenjang 4 untuk lulusan SMA/SMK dengan pengalaman minimal 3 tahun, cocok untuk tenaga terampil.
-                    SKK Jenjang 6 untuk lulusan S1 Teknik dengan pengalaman minimal 2 tahun, cocok untuk tenaga ahli.
-                    Jenjang 6 memiliki kewenangan dan tanggung jawab yang lebih besar.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 7 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(7)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Berapa masa berlaku SBU dan bagaimana cara perpanjangannya?
-                </h3>
-                <svg id="icon-7" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-7" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    SBU berlaku selama 3 tahun dan dapat diperpanjang. Untuk perpanjangan, perusahaan harus memenuhi
-                    persyaratan seperti laporan realisasi pekerjaan, SDM bersertifikat yang masih berlaku, dan membayar
-                    iuran asosiasi. Proses perpanjangan lebih mudah dibanding pengurusan baru.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 8 -->
-            <div class="bg-white rounded-xl shadow-lg border-t-4 border-[#142A5C] overflow-hidden">
-              <button
-                class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none transition-colors duration-200"
-                onclick="toggleFAQ(8)">
-                <h3 class="text-base sm:text-lg font-semibold text-[#142A5C] pr-4">
-                  Mengapa harus menggunakan jasa konsultan untuk pengurusan dokumen konstruksi?
-                </h3>
-                <svg id="icon-8" class="w-6 h-6 text-[#142A5C] transform transition-transform duration-300" fill="none"
-                  stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </button>
-              <div id="answer-8" class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-                <div class="px-6 pb-6 pt-2 border-t border-gray-200">
-                  <p class="text-gray-700 text-sm sm:text-base leading-relaxed">
-                    Konsultan berpengalaman memahami persyaratan teknis, proses birokrasi, dan update regulasi terbaru.
-                    Ini menghemat waktu, mengurangi risiko penolakan, dan memastikan dokumen sesuai standar. ALI telah
-                    menangani ribuan kasus dengan tingkat keberhasilan tinggi dan dukungan penuh hingga sertifikat
-                    terbit.
-                  </p>
-                </div>
-              </div>
-            </div>
-
           </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="relative w-full h-64 overflow-hidden">
+              <img src="img/testimoni3.jpg" alt="Rizky Pratama, Klien Akses Legal"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-bold text-[#142A5C]">Rizky Pratama</h3>
+                <div class="flex text-yellow-500">
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 italic leading-relaxed">"Harga terjangkau, hasil memuaskan, sangat
+                direkomendasikan."</p>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="relative w-full h-64 overflow-hidden">
+              <img src="img/testimoni4.jpg" alt="WaWa Riki Sukra, Klien Akses Legal"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-3">
+                <h3 class="text-lg font-bold text-[#142A5C]">WaWa Riki Sukra</h3>
+                <div class="flex text-yellow-500">
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 italic leading-relaxed">"Pelayanan ramah, dokumen lengkap tepat waktu."
+              </p>
+            </div>
+          </div>
+
         </div>
-      </section>
-
-
-      <section class="bg-white w-full py-16 sm:py-20 lg:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#142A5C] mb-6">
-            Dipercaya Lebih dari
-            <span class="block text-yellow-500 mt-2 text-4xl sm:text-5xl lg:text-6xl font-black leading-none">
-              10.000 Klien
-            </span>
+      </div>
+    </section>
+    <!-- Form Konsultasi Section -->
+    <section id="konsultasi-form" class="bg-gray-50 py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+          <h2 class="text-2xl sm:text-3xl font-bold text-[#142A5C] mb-2 text-center">
+            Daftar Konsultasi Sekarang
           </h2>
-          <p class="text-gray-600 text-base sm:text-lg mb-12 max-w-2xl mx-auto">
-            Baca apa kata mereka yang telah sukses mengurus perizinan konstruksi bersama kami.
+          <p class="text-gray-600 text-center mb-6 sm:mb-8 text-sm sm:text-base">
+            Silakan hubungi kami untuk mendapatkan konsultasi gratis harga spesial
           </p>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-
-            <div
-              class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="relative w-full h-64 overflow-hidden">
-                <img src="img/testimoni1.jpg" alt="Irfan Ghafur, Klien Akses Legal"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
-                </div>
-              </div>
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-3">
-                  <h3 class="text-lg font-bold text-[#142A5C]">Irfan Ghafur</h3>
-                  <div class="flex text-yellow-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                      <path fill-rule="evenodd"
-                        d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                      <path fill-rule="evenodd"
-                        d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                      <path fill-rule="evenodd"
-                        d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                      <path fill-rule="evenodd"
-                        d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                      <path fill-rule="evenodd"
-                        d="M10.868 2.884c.31-.768 1.43-.768 1.74 0l2.675 6.703a.96.96 0 00.935.679h6.903c.969 0 1.371 1.24.588 1.81l-5.64 4.104a.96.96 0 00-.32.947l2.131 6.578c.324 1.002-.85.877-1.468-.06L11 17.151a.96.96 0 00-1.109 0L6.29 21.056c-.618.937-1.792 1.062-1.468.06l2.131-6.578a.96.96 0 00-.32-.947l-5.64-4.104c-.783-.57-.381-1.81.587-1.81h6.903a.96.96 0 00.935-.679l2.675-6.703z"
-                        clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">"Proses cepat dan pelayanan sangat memuaskan!"
-                </p>
-              </div>
+          <form id="konsultasiForm" class="space-y-4 sm:space-y-6">
+            <!-- Nama -->
+            <div>
+              <label for="nama" class="block text-sm font-medium text-gray-700 mb-2">Nama
+                Lengkap</label>
+              <input type="text" id="nama" name="nama" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-transparent transition duration-200"
+                placeholder="Nama Lengkap Anda">
             </div>
 
-            <div
-              class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="relative w-full h-64 overflow-hidden">
-                <img src="img/testimoni5.jpg" alt="IwanCoy, Klien Akses Legal"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
-                </div>
-              </div>
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-3">
-                  <h3 class="text-lg font-bold text-[#142A5C]">IwanCoy</h3>
-                  <div class="flex text-yellow-500">
-                  </div>
-                </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">"Pelayanan Cepat, profesional, Mantap dan
-                  Fastrespon"</p>
-              </div>
+            <!-- Nama Usaha -->
+            <div>
+              <label for="namaUsaha" class="block text-sm font-medium text-gray-700 mb-2">Nama
+                Usaha</label>
+              <input type="text" id="namaUsaha" name="namaUsaha" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg  focus:border-transparent transition duration-200"
+                placeholder="Nama Usaha/Perusahaan Anda">
             </div>
 
-            <div
-              class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="relative w-full h-64 overflow-hidden">
-                <img src="img/testimoni3.jpg" alt="Rizky Pratama, Klien Akses Legal"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
-                </div>
-              </div>
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-3">
-                  <h3 class="text-lg font-bold text-[#142A5C]">Rizky Pratama</h3>
-                  <div class="flex text-yellow-500">
-                  </div>
-                </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">"Harga terjangkau, hasil memuaskan, sangat
-                  direkomendasikan."</p>
-              </div>
+            <!-- Domisili -->
+            <div>
+              <label for="domisili" class="block text-sm font-medium text-gray-700 mb-2">Domisili</label>
+              <input type="text" id="domisili" name="domisili" required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-transparent transition duration-200"
+                placeholder="Kota/Kabupaten domisili Anda">
             </div>
 
-            <div
-              class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-              <div class="relative w-full h-64 overflow-hidden">
-                <img src="img/testimoni4.jpg" alt="WaWa Riki Sukra, Klien Akses Legal"
-                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60">
-                </div>
-              </div>
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-3">
-                  <h3 class="text-lg font-bold text-[#142A5C]">WaWa Riki Sukra</h3>
-                  <div class="flex text-yellow-500">
-                  </div>
-                </div>
-                <p class="text-sm text-gray-600 italic leading-relaxed">"Pelayanan ramah, dokumen lengkap tepat waktu."
-                </p>
-              </div>
-            </div>
-
+            <!-- Tombol Submit -->
+            <button type="submit"
+              class="w-full bg-[#14C92E] hover:bg-[#12b32a] text-white font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg py-3 px-6 rounded-lg transition duration-300 ease-in-out flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-lg"></i>
+              Kirim ke WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-6 mt-auto -mb-20 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <!-- Logo Registrasi -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-6">
+          <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
+            <img src="img/oss-og-fb.png" alt="OSS Logo" class="h-6 sm:h-8 lg:h-10 w-auto" />
+            <img src="img/Logo Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR) Sigap Membangun Negeri.png"
+              alt="PUPR Logo" class="h-6 sm:h-8 lg:h-10 w-auto" />
           </div>
         </div>
-      </section>
-      <!-- Form Konsultasi Section -->
-      <section id="konsultasi-form" class="bg-gray-50 py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div class="max-w-2xl mx-auto">
-          <div class="bg-white rounded-lg shadow-lg p-6 sm:p-8">
-            <h2 class="text-2xl sm:text-3xl font-bold text-[#142A5C] mb-2 text-center">
-              Daftar Konsultasi Sekarang
-            </h2>
-            <p class="text-gray-600 text-center mb-6 sm:mb-8 text-sm sm:text-base">
-              Silakan hubungi kami untuk mendapatkan konsultasi gratis harga spesial
-            </p>
+        <p class="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4">
+          © 2025 PT Akses Legal Indonesia. All rights reserved.
+        </p>
+      </div>
+    </section>
+    <!-- JavaScript untuk Form -->
+    <script>
+      document.getElementById('konsultasiForm').addEventListener('submit', function (e) {
+        e.preventDefault();
 
-            <form id="konsultasiForm" class="space-y-4 sm:space-y-6">
-              <!-- Nama -->
-              <div>
-                <label for="nama" class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
-                <input type="text" id="nama" name="nama" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-transparent transition duration-200"
-                  placeholder="Nama Lengkap Anda">
-              </div>
+        // Ambil data dari form
+        const nama = document.getElementById('nama').value;
+        const namaUsaha = document.getElementById('namaUsaha').value;
+        const domisili = document.getElementById('domisili').value;
 
-              <!-- Nama Usaha -->
-              <div>
-                <label for="namaUsaha" class="block text-sm font-medium text-gray-700 mb-2">Nama Usaha</label>
-                <input type="text" id="namaUsaha" name="namaUsaha" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg  focus:border-transparent transition duration-200"
-                  placeholder="Nama Usaha/Perusahaan Anda">
-              </div>
-
-              <!-- Domisili -->
-              <div>
-                <label for="domisili" class="block text-sm font-medium text-gray-700 mb-2">Domisili</label>
-                <input type="text" id="domisili" name="domisili" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-transparent transition duration-200"
-                  placeholder="Kota/Kabupaten domisili Anda">
-              </div>
-
-              <!-- Tombol Submit -->
-              <button type="submit"
-                class="w-full bg-[#14C92E] hover:bg-[#12b32a] text-white font-semibold rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg py-3 px-6 rounded-lg transition duration-300 ease-in-out flex items-center justify-center gap-2">
-                <i class="fab fa-whatsapp text-lg"></i>
-                Kirim ke WhatsApp
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="bg-gray-100 py-6 mt-auto -mb-20 sm:py-8 md:py-12 lg:py-16 px-4 sm:px-6">
-        <div class="max-w-6xl mx-auto text-center">
-          <!-- Logo Registrasi -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 lg:gap-6">
-            <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
-              <img src="img/oss-og-fb.png" alt="OSS Logo" class="h-6 sm:h-8 lg:h-10 w-auto" />
-              <img src="img/Logo Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR) Sigap Membangun Negeri.png"
-                alt="PUPR Logo" class="h-6 sm:h-8 lg:h-10 w-auto" />
-            </div>
-          </div>
-          <p class="text-gray-500 text-xs sm:text-sm mt-3 sm:mt-4">
-            © 2025 PT Akses Legal Indonesia. All rights reserved.
-          </p>
-        </div>
-      </section>
-      <!-- JavaScript untuk Form -->
-      <script>
-        document.getElementById('konsultasiForm').addEventListener('submit', function (e) {
-          e.preventDefault();
-
-          // Ambil data dari form
-          const nama = document.getElementById('nama').value;
-          const namaUsaha = document.getElementById('namaUsaha').value;
-          const domisili = document.getElementById('domisili').value;
-
-          // Validasi form
-          if (!nama || !namaUsaha || !domisili) {
-            alert('Mohon lengkapi semua field yang diperlukan');
-            return;
-          }
-
-          // Format pesan WhatsApp
-          const message = `Halo, saya ingin konsultasi tentang SKK & SBU Konstruksi.
-
- *Data Saya:*
- *Nama:* ${nama}
- *Nama Usaha:* ${namaUsaha}  
- *Domisili:* ${domisili}
-
-Saya dari website.
-
-Terima kasih.`;
-
-          // Encode pesan untuk URL
-          const encodedMessage = encodeURIComponent(message);
-
-          // Nomor WhatsApp tujuan
-          const phoneNumber = '6282151519925';
-
-          // Buat URL WhatsApp
-          const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-          // Buka WhatsApp di tab baru
-          window.open(whatsappURL, '_blank');
-
-          // Reset form setelah submit
-          this.reset();
-
-          // Tampilkan pesan sukses
-          alert('Form berhasil dikirim! Anda akan diarahkan ke WhatsApp.');
-        });
-
-        // Smooth scroll untuk anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-              target.scrollIntoView({
-                behavior: 'smooth'
-              });
-            }
-          });
-        });
-        // Tabs handler (works inside section)
-        const btns = document.querySelectorAll('#syarat .tab-btn');
-        const panels = {
-          pbg: document.querySelector('#syarat #panel-pbg'),
-          slf: document.querySelector('#syarat #panel-slf'),
-          skk: document.querySelector('#syarat #panel-skk'),
-          sbu: document.querySelector('#syarat #panel-sbu')
-        };
-
-        btns.forEach(btn => {
-          btn.addEventListener('click', () => {
-            const key = btn.getAttribute('data-tab');
-            btns.forEach(b => b.setAttribute('aria-selected', String(b === btn)));
-            Object.values(panels).forEach(p => { p.classList.add('hidden'); p.classList.remove('fade-enter-active'); p.classList.add('fade-enter'); });
-            const active = panels[key];
-            active.classList.remove('hidden', 'fade-enter');
-            requestAnimationFrame(() => active.classList.add('fade-enter-active'));
-          });
-        });
-
-        // render <ChecklistItem> custom tags using template
-        (function hydrateChecklistItems(root = document.querySelector('#syarat')) {
-          const tpl = document.querySelector('#syarat #tpl-check');
-          root.querySelectorAll('ChecklistItem').forEach(node => {
-            const clone = tpl.content.cloneNode(true);
-            clone.querySelector('p.font-semibold').textContent = node.getAttribute('title') || 'Item';
-            clone.querySelector('p.text-sm').textContent = node.getAttribute('desc') || '';
-            node.replaceWith(clone);
-          });
-        })();
-        // Menggunakan sintaks modern untuk fungsi JavaScript
-        function toggleFAQ(id) {
-          const answer = document.getElementById(`answer-${id}`);
-          const icon = document.getElementById(`icon-${id}`);
-
-          // Cek jika answer sedang terbuka
-          const isOpen = answer.classList.contains('active');
-
-          // Tutup semua FAQ yang terbuka
-          const allAnswers = document.querySelectorAll('.faq-answer');
-          allAnswers.forEach(item => {
-            if (item.classList.contains('active')) {
-              item.classList.remove('active');
-              item.style.maxHeight = '0px';
-              // Cari ikon yang terkait dan putar kembali
-              const associatedIcon = item.closest('.rounded-xl').querySelector('svg');
-              associatedIcon.classList.remove('rotate-180');
-            }
-          });
-
-          // Jika item yang diklik sebelumnya tidak terbuka, buka sekarang
-          if (!isOpen) {
-            answer.classList.add('active');
-            // Menggunakan scrollHeight untuk mendapatkan tinggi konten secara dinamis
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            icon.classList.add('rotate-180');
-          }
+        // Validasi form
+        if (!nama || !namaUsaha || !domisili) {
+          alert('Mohon lengkapi semua field yang diperlukan');
+          return;
         }
 
-      </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        // Format pesan WhatsApp
+        const message = `Halo, saya ingin konsultasi tentang SKK & SBU Konstruksi.
+
+  *Data Saya:*
+  *Nama:* ${nama}
+  *Nama Usaha:* ${namaUsaha}  
+  *Domisili:* ${domisili}
+
+  Saya dari website.
+
+  Terima kasih.`;
+
+        // Encode pesan untuk URL
+        const encodedMessage = encodeURIComponent(message);
+
+        // Nomor WhatsApp tujuan
+        const phoneNumber = '6282151519925';
+
+        // Buat URL WhatsApp
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Buka WhatsApp di tab baru
+        window.open(whatsappURL, '_blank');
+
+        // Reset form setelah submit
+        this.reset();
+
+        // Tampilkan pesan sukses
+        alert('Form berhasil dikirim! Anda akan diarahkan ke WhatsApp.');
+      });
+
+      // Smooth scroll untuk anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+      // Tabs handler (works inside section)
+      const btns = document.querySelectorAll('#syarat .tab-btn');
+      const panels = {
+        pbg: document.querySelector('#syarat #panel-pbg'),
+        slf: document.querySelector('#syarat #panel-slf'),
+        skk: document.querySelector('#syarat #panel-skk'),
+        sbu: document.querySelector('#syarat #panel-sbu')
+      };
+
+      btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const key = btn.getAttribute('data-tab');
+          btns.forEach(b => b.setAttribute('aria-selected', String(b === btn)));
+          Object.values(panels).forEach(p => { p.classList.add('hidden'); p.classList.remove('fade-enter-active'); p.classList.add('fade-enter'); });
+          const active = panels[key];
+          active.classList.remove('hidden', 'fade-enter');
+          requestAnimationFrame(() => active.classList.add('fade-enter-active'));
+        });
+      });
+
+      // render <ChecklistItem> custom tags using template
+      (function hydrateChecklistItems(root = document.querySelector('#syarat')) {
+        const tpl = document.querySelector('#syarat #tpl-check');
+        root.querySelectorAll('ChecklistItem').forEach(node => {
+          const clone = tpl.content.cloneNode(true);
+          clone.querySelector('p.font-semibold').textContent = node.getAttribute('title') || 'Item';
+          clone.querySelector('p.text-sm').textContent = node.getAttribute('desc') || '';
+          node.replaceWith(clone);
+        });
+      })();
+      // Menggunakan sintaks modern untuk fungsi JavaScript
+      function toggleFAQ(id) {
+        const answer = document.getElementById(`answer-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+
+        // Cek jika answer sedang terbuka
+        const isOpen = answer.classList.contains('active');
+
+        // Tutup semua FAQ yang terbuka
+        const allAnswers = document.querySelectorAll('.faq-answer');
+        allAnswers.forEach(item => {
+          if (item.classList.contains('active')) {
+            item.classList.remove('active');
+            item.style.maxHeight = '0px';
+            // Cari ikon yang terkait dan putar kembali
+            const associatedIcon = item.closest('.rounded-xl').querySelector('svg');
+            associatedIcon.classList.remove('rotate-180');
+          }
+        });
+
+        // Jika item yang diklik sebelumnya tidak terbuka, buka sekarang
+        if (!isOpen) {
+          answer.classList.add('active');
+          // Menggunakan scrollHeight untuk mendapatkan tinggi konten secara dinamis
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          icon.classList.add('rotate-180');
+        }
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+
+        tabButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            // Hapus status 'selected' dari semua tombol
+            tabButtons.forEach(btn => btn.setAttribute('aria-selected', 'false'));
+
+            // Sembunyikan semua panel
+            tabPanels.forEach(panel => panel.classList.add('hidden'));
+
+            // Atur tombol yang diklik menjadi 'selected'
+            button.setAttribute('aria-selected', 'true');
+
+            // Tampilkan panel yang sesuai
+            const targetPanelId = 'panel-' + button.dataset.tab;
+            const targetPanel = document.getElementById(targetPanelId);
+            if (targetPanel) {
+              targetPanel.classList.remove('hidden');
+            }
+          });
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 
 </body>
 
