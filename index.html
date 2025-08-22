@@ -158,19 +158,24 @@
       </div>
     </div>
 
-    <!-- Gambar Hero Kanan (Order 1 di mobile, Order 2 di desktop) -->
     <div
       class="lg:w-1/2 relative flex justify-center items-center w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] order-1 lg:order-2">
       <img alt="Seorang arsitek sedang meninjau proyek di lokasi konstruksi."
         class="w-full h-full object-cover object-center" src="img/hero.jpg" />
+
       <div
-        class="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 flex items-center gap-2 sm:gap-3 lg:gap-4 flex-wrap">
-        <img src="img/oss-og-fb.png" alt="OSS Logo" class="h-8 sm:h-12 w-auto" />
+        class="absolute top-4 left-1/2 -translate-x-1/2 w-full max-w-xs flex justify-center items-center gap-3 sm:gap-4 md:gap-5 px-4 md:px-0
+    lg:static lg:w-auto lg:max-w-none lg:transform-none lg:flex lg:justify-end lg:items-center lg:gap-4 lg:p-4 lg:absolute lg:top-4 lg:right-4">
+
+        <img src="img/oss-og-fb.png" alt="OSS Logo" class="h-6 sm:h-7 md:h-8 lg:h-12 w-auto" />
         <img src="img/Logo Kementerian Pekerjaan Umum dan Perumahan Rakyat (PUPR) Sigap Membangun Negeri.png"
-          alt="PUPR Logo" class="h-8 sm:h-12 w-auto" />
-        <img alt="Logo PT Akses Legal Indonesia" class="h-10 sm:h-12 w-auto" src="img/Logo Ali Biru Panjang 3.png" />
+          alt="PUPR Logo" class="h-6 sm:h-7 md:h-8 lg:h-12 w-auto" />
+        <img alt="Logo PT Akses Legal Indonesia" class="h-7 sm:h-8 md:h-9 lg:h-12 w-auto"
+          src="img/Logo Ali Biru Panjang 3.png" />
       </div>
+
     </div>
+  </section>
   </section>
   <!-- Apa itu PBG & SLF - Background Abu-abu -->
   <section id="pbg-slf" class="bg-gradient-light py-16 px-4 sm:px-6 md:px-12 lg:px-20">
@@ -483,8 +488,7 @@
             <div class="flex flex-wrap items-start justify-between gap-4">
               <div>
                 <h3 class="text-xl font-bold">Persyaratan PBG (Persetujuan Bangunan Gedung)</h3>
-                <p class="mt-1 text-sm text-slate-600">Dokumen dasar untuk pengajuan PBG. Format digital (PDF/JPG)
-                  diperbolehkan.</p>
+                <p class="mt-1 text-sm text-slate-600">Dokumen dasar untuk pengajuan PBG.</p>
               </div>
             </div>
 
@@ -500,7 +504,7 @@
                       clip-rule="evenodd" />
                   </svg></span>
                 <div>
-                  <p class="font-semibold">KTP Pemilik / Penanggung Jawab</p>
+                  <p class="font-semibold">KTP</p>
                   <p class="text-sm text-slate-600">Foto KTP yang masih berlaku.</p>
                 </div>
               </div>
@@ -509,52 +513,17 @@
                   class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                     class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path
-                      d="M19.5 6a3 3 0 0 1-3 3H7.5A3 3 0 0 1 7.5 3H16.5A3 3 0 0 1 19.5 6ZM7.5 9h9v9.75A2.25 2.25 0 0 1 14.25 21h-3a2.25 2.25 0 0 1-2.25-2.25V9Z" />
+                    <path fill-rule="evenodd"
+                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                      clip-rule="evenodd" />
                   </svg></span>
                 <div>
-                  <p class="font-semibold">Sertifikat Tanah / Bukti Kepemilikan</p>
-                  <p class="text-sm text-slate-600">SHM/SHGB atau dokumen sejenis.</p>
+                  <p class="font-semibold">NPWP</p>
+                  <p class="text-sm text-slate-600"></p>
                 </div>
               </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path d="M5 3a2 2 0 00-2 2v14l4-2 4 2 4-2 4 2V5a2 2 0 00-2-2H5z" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">Gambar Teknis Bangunan</p>
-                  <p class="text-sm text-slate-600">Arsitektur, struktur, & utilitas (MEP).</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path
-                      d="M4.5 6.75A2.25 2.25 0 016.75 4.5h10.5A2.25 2.25 0 0119.5 6.75v10.5A2.25 2.25 0 0117.25 19.5H6.75A2.25 2.25 0 014.5 17.25V6.75zm3 0a.75.75 0 000 1.5h9a.75.75 0 000-1.5h-9z" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">IMB Lama (jika ada)</p>
-                  <p class="text-sm text-slate-600">Sebagai referensi data bangunan.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path
-                      d="M16.5 3.75a.75.75 0 01.75.75v3.75h3.75a.75.75 0 010 1.5H17.25V13.5a.75.75 0 01-1.5 0V9.75H12a.75.75 0 010-1.5h3.75V4.5a.75.75 0 01.75-.75z" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">Surat Pernyataan Kesesuaian Fungsi</p>
-                  <p class="text-sm text-slate-600">Ditandatangani pemilik / konsultan.</p>
-                </div>
-              </div>
+
+
             </div>
 
             <!-- Konsultasi PBG -->
@@ -562,7 +531,7 @@
               class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
               <p>Belum lengkap? <span class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu
                   siapkan gambar, pernyataan, dan cek kelayakan gratis.</span></p>
-              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22PBG%22%20saya%20dari%20website"
+              <a href="https://wa.me/6282151519925?text=saya%20ingin%20tanya%20soal%20%22PBG%22%20saya%20dari%20website"
                 data-product="pbg" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
                 dengan Konsultan</a>
@@ -591,8 +560,8 @@
                       clip-rule="evenodd" />
                   </svg></span>
                 <div>
-                  <p class="font-semibold">Dokumen PBG/IMB</p>
-                  <p class="text-sm text-slate-600">Sebagai rujukan izin awal.</p>
+                  <p class="font-semibold">KTP</p>
+                  <p class="text-sm text-slate-600">Foto KTP yang masih berlaku.</p>
                 </div>
               </div>
               <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
@@ -605,61 +574,21 @@
                       clip-rule="evenodd" />
                   </svg></span>
                 <div>
-                  <p class="font-semibold">Laporan Pengawasan Konstruksi</p>
-                  <p class="text-sm text-slate-600">Dari pengawas/penyedia jasa.</p>
+                  <p class="font-semibold">NPWP</p>
+                  <p class="text-sm text-slate-600"></p>
                 </div>
               </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path fill-rule="evenodd"
-                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
-                      clip-rule="evenodd" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">Dokumen Kelayakan Teknis</p>
-                  <p class="text-sm text-slate-600">Arsitektur, struktur, utilitas.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path fill-rule="evenodd"
-                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
-                      clip-rule="evenodd" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">Berita Acara Uji Fungsi (jika ada)</p>
-                  <p class="text-sm text-slate-600">Hasil uji sistem (listrik, hydrant, lift, dll).</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3 rounded-xl bg-[rgb(255_199_0/0.12)] p-4">
-                <span
-                  class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-[rgb(255_199_0/0.25)]"><svg
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                    class="h-4 w-4 text-[rgb(20_42_92/var(--tw-text-opacity))]">
-                    <path fill-rule="evenodd"
-                      d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
-                      clip-rule="evenodd" />
-                  </svg></span>
-                <div>
-                  <p class="font-semibold">Foto-foto Bangunan</p>
-                  <p class="text-sm text-slate-600">Eksterior & interior terkini.</p>
-                </div>
-              </div>
+
+
+
             </div>
 
             <!-- Konsultasi SLF -->
             <div
               class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
               <p>Masih bingung dengan persyaratan SLF? <span
-                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
-                  pernyataan, dan cek kelayakan gratis.</span></p>
-              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SLF%22%20saya%20dari%20website"
+                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami Siap bantu.</span></p>
+              <a href="https://wa.me/6282151519925?text=saya%20ingin%20tanya%20soal%20%22SLF%22%20saya%20dari%20website"
                 data-product="slf" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
                 dengan Konsultan</a>
@@ -766,7 +695,7 @@
             <div class="mt-6 rounded-xl bg-slate-50 p-4 text-sm text-slate-600">
               Proses asesmen dapat dilakukan <span
                 class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">secara daring</span>. Tim kami siap
-              memandu bukti portofolio.
+              membantu
             </div>
             <div class="flex flex-wrap items-start justify-between gap-4">
               <div>
@@ -858,7 +787,7 @@
               <p>Tidak tahu harus mulai dari mana untuk mengurus SKK? <span
                   class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
                   pernyataan, dan cek kelayakan gratis.</span></p>
-              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SKK%22%20saya%20dari%20website"
+              <a href="https://wa.me/6282151519925?text=saya%20ingin%20tanya%20soal%20%22SKK%22%20saya%20dari%20website"
                 data-product="skk" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
                 dengan Konsultan</a>
@@ -969,9 +898,8 @@
             <div
               class="mt-6 flex flex-col gap-3 rounded-xl bg-slate-50 p-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:justify-between">
               <p>Kebingungan saat memilih KBLI untuk SBU? <span
-                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami bantu siapkan gambar,
-                  pernyataan, dan cek kelayakan gratis.</span></p>
-              <a href="https://wa.me/62821515159925?text=saya%20ingin%20tanya%20soal%20%22SBU%22%20saya%20dari%20website"
+                  class="font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))]">Kami Siap bantu </span></p>
+              <a href="https://wa.me/6282151519925?text=saya%20ingin%20tanya%20soal%20%22SBU%22%20saya%20dari%20website"
                 data-product="sbu" target="_blank" rel="noopener noreferrer"
                 class="inline-flex items-center justify-center rounded-lg border border-[rgb(20_42_92/0.25)] bg-white px-4 py-2 font-semibold text-[rgb(20_42_92/var(--tw-text-opacity))] hover:bg-[rgb(255_199_0/0.12)]">Bicara
                 dengan Konsultan</a>
