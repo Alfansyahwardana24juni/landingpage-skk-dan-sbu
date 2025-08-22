@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Bangunan Aman, Usaha Nyaman — ALI</title>
+  <title>AKSES LEGAL INDONESIA | PBG & SLF,SKK & SBU KONSTRUKSI</title>
+  <!-- Favicons -->
+  <link href="img/logo ALI.png" rel="icon">
+  <link href="img/logo ALI.png" rel="apple-touch-icon">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -76,12 +80,39 @@
     .tab-panel.hidden {
       display: none;
     }
+
+    #chat-label {
+      position: fixed;
+      bottom: 90px;
+      /* jarak dari bawah (atur sesuai kebutuhan) */
+      right: 20px;
+      /* jarak dari kanan */
+      background: #fff;
+      padding: 6px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+      z-index: 9999;
+    }
+
+    /* Sembunyikan di HP (layar <= 768px) */
+    @media (max-width: 768px) {
+      #chat-label {
+        display: none;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-white text-gray-900">
+  <!-- Tulisan di atas tombol chat -->
+  <div id="chat-label">
+    Konsultasi Gratis sekarang 👇
+  </div>
 
-  <!-- Start Script Socialchat Web Chat -->
+  <!-- Script SocialChat -->
   <script type="text/javascript">
     var js = document.createElement("script");
     js.async = true;
@@ -91,6 +122,7 @@
     js.src = 'https://app.socialchat.id/widget/loader.js';
     document.getElementsByTagName("head")[0].appendChild(js);
   </script>
+
   <!-- End Script Socialchat Web Chat -->
 
   <!-- Hero Section -->
