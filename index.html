@@ -1,110 +1,70 @@
-<!doctype html>
-<html lang="id">
-
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>AKSES LEGAL INDONESIA | PBG & SLF,SKK & SBU KONSTRUKSI</title>
-  <!-- Favicons -->
-  <link href="img/logo ALI.png" rel="icon">
-  <link href="img/logo ALI.png" rel="apple-touch-icon">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Jasa Pengurusan SKK & SBU Konstruksi Resmi | Akses Legal Indonesia</title>
 
+  <!-- Meta SEO -->
+  <meta name="description"
+    content="Layanan pengurusan SKK dan SBU Konstruksi resmi, cepat, dan terpercaya. Konsultasi gratis bersama Akses Legal Indonesia.">
+  <meta name="keywords"
+    content="SKK Konstruksi, SBU Konstruksi, jasa pengurusan SKK, jasa pengurusan SBU, akses legal indonesia">
+  <link rel="canonical" href="https://skksbu.akseslegal.id/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jasa Pengurusan SKK & SBU Konstruksi Resmi | Akses Legal Indonesia">
+  <meta property="og:description"
+    content="Urus SKK & SBU Konstruksi resmi dengan mudah dan cepat. Dapatkan bantuan profesional dari Akses Legal Indonesia.">
+  <meta property="og:image" content="https://skksbu.akseslegal.id/img/logo-ALI.png">
+  <meta property="og:url" content="https://skksbu.akseslegal.id/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Akses Legal Indonesia">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jasa Pengurusan SKK & SBU Konstruksi Resmi | Akses Legal Indonesia">
+  <meta name="twitter:description"
+    content="Pengurusan SKK & SBU resmi cepat dan terpercaya bersama Akses Legal Indonesia.">
+  <meta name="twitter:image" content="https://skksbu.akseslegal.id/img/logo-ALI.png">
+
+  <!-- Favicons -->
+  <link rel="icon" href="https://skksbu.akseslegal.id/img/logo-ALI.png">
+  <link rel="apple-touch-icon" href="https://skksbu.akseslegal.id/img/logo-ALI.png">
+
+  <!-- Font & CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Akses Legal Indonesia - SKK & SBU Konstruksi",
+    "url": "https://skksbu.akseslegal.id/",
+    "logo": "https://skksbu.akseslegal.id/img/logo-ALI.png",
+    "image": "https://skksbu.akseslegal.id/img/logo-ALI.png",
+    "description": "Jasa pengurusan SKK dan SBU konstruksi resmi dan cepat di Indonesia.",
+    "areaServed": "Indonesia",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+62-813-xxxx-xxxx",
+      "contactType": "Customer Service",
+      "areaServed": "ID"
+    }
+  }
+  </script>
+
   <style>
     body {
-      font-family: "Inter", sans-serif
+      font-family: "Inter", sans-serif;
     }
-
 
     html {
       scroll-behavior: smooth;
     }
-
-    /* Gaya untuk floating WhatsApp button */
-    .floating-whatsapp {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 50;
-    }
-
-    .cta-mobile-sticky {
-      position: sticky;
-      bottom: 0;
-      z-index: 40;
-    }
-
-    /* Gaya highlight untuk pricing table */
-    .highlight-card {
-      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 0 0 4px #FFC700;
-      transform: scale(1.05);
-    }
-
-    .highlight-card .button-cta {
-      background-color: #FFC700;
-      color: #142A5C;
-    }
-
-    /* Background gradient untuk variasi */
-    .bg-gradient-light {
-      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    }
-
-    .bg-gradient-blue {
-      background: linear-gradient(135deg, #f1f5f9 0%, #e0f2fe 100%);
-    }
-
-    :root {
-      --tw-bg-opacity: 1;
-      --tw-text-opacity: 1;
-    }
-
-    .fade-enter-active {
-      animation: fadeIn 0.5s ease-out;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .tab-panel.hidden {
-      display: none;
-    }
-
-    #chat-label {
-      position: fixed;
-      bottom: 90px;
-      /* jarak dari bawah (atur sesuai kebutuhan) */
-      right: 20px;
-      /* jarak dari kanan */
-      background: #fff;
-      padding: 6px 12px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      font-size: 14px;
-      font-weight: bold;
-      color: #000;
-      z-index: 9999;
-    }
-
-    /* Sembunyikan di HP (layar <= 768px) */
-    @media (max-width: 768px) {
-      #chat-label {
-        display: none;
-      }
-    }
   </style>
 </head>
+
 
 <body class="bg-white text-gray-900">
   <!-- Tulisan di atas tombol chat -->
